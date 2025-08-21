@@ -1,112 +1,336 @@
-<!DOCTYPE html>
-<html lang="fa">
+<!doctype html>
+
+<html lang="fa" dir="rtl">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>تکدو | فروشگاه اینترنتی</title>
-    <meta name="description" content="تکدو، فروشگاه اینترنتی محصولات با کیفیت. خرید آسان و سریع از تکدو.">
-    <meta name="keywords" content="تکدو, فروشگاه اینترنتی, خرید آنلاین, محصولات دیجیتال, تکنولوژی">
-    <meta name="robots" content="index, follow">
-    <link rel="canonical" href="https://takdoo.com/">
-    <style>
-        body {
-            font-family: Tahoma, sans-serif;
-            margin: 0; padding: 0;
-            background-color: #f9f9f9;
-            color: #333;
-        }
-        header {
-            background-color: #007bff;
-            color: white;
-            padding: 20px;
-            text-align: center;
-        }
-        nav a {
-            color: white;
-            margin: 0 15px;
-            text-decoration: none;
-            font-weight: bold;
-        }
-        main {
-            max-width: 1000px;
-            margin: 30px auto;
-            padding: 0 20px;
-        }
-        .product {
-            border: 1px solid #ddd;
-            border-radius: 8px;
-            padding: 15px;
-            margin: 15px;
-            display: inline-block;
-            width: calc(33% - 50px);
-            box-sizing: border-box;
-            vertical-align: top;
-            background-color: white;
-        }
-        .product img {
-            width: 100%;
-            border-radius: 8px;
-        }
-        footer {
-            background-color: #333;
-            color: white;
-            text-align: center;
-            padding: 15px;
-        }
-        @media (max-width: 768px) {
-            .product { width: calc(50% - 40px); }
-        }
-        @media (max-width: 480px) {
-            .product { width: 100%; margin: 10px 0; }
-            nav a { display: block; margin: 10px 0; }
-        }
-    </style>
-</head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>تکدو | فروشگاه اینترنتی – خرید آسان، ارزان و مطمئن</title>
+  <meta name="description" content="فروشگاه اینترنتی تکدو | خرید آسان و سریع انواع کالای دیجیتال، خانه و آشپزخانه، ورزشی، آرایشی و بهداشتی با ارسال سریع و پشتیبانی ۲۴ ساعته." />
+  <meta name="keywords" content="تکدو, takdoo, فروشگاه اینترنتی, خرید آنلاین, کالای دیجیتال, لوازم آرایشی, ورزشی, خانه و آشپزخانه" />
+  <meta name="robots" content="index,follow,max-image-preview:large" />
+  <meta name="author" content="Takdoo.com" />
+  <meta name="theme-color" content="#0ea5e9" />  <!-- Canonical & Alt -->  <link rel="canonical" href="https://takdoo.com/" />
+  <link rel="alternate" hreflang="fa-IR" href="https://takdoo.com/" />  <!-- Open Graph / Twitter -->  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="تکدو" />
+  <meta property="og:title" content="فروشگاه اینترنتی تکدو" />
+  <meta property="og:description" content="خرید آنلاین با تضمین اصالت کالا و ارسال سریع در تکدو." />
+  <meta property="og:url" content="https://takdoo.com/" />
+  <meta property="og:image" content="https://takdoo.com/favicon.ico" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="تکدو | فروشگاه اینترنتی" />
+  <meta name="twitter:description" content="خرید آنلاین ارزان و سریع از تکدو." />
+  <meta name="twitter:image" content="https://takdoo.com/favicon.ico" />  <!-- Hints -->  <link rel="dns-prefetch" href="//takdoo.com" />
+  <link rel="preconnect" href="https://takdoo.com" crossorigin />  <style>
+    :root{
+      --bg:#0b1220; --card:#0f172a; --muted:#94a3b8; --txt:#e2e8f0; --brand:#0ea5e9; --brand-2:#22d3ee; --ok:#10b981; --warn:#f59e0b; --danger:#ef4444;
+      --radius:1.4rem;
+    }
+    *{box-sizing:border-box}
+    html,body{height:100%}
+    body{margin:0;font-family:IRANSans, Vazirmatn, Shabnam, Tahoma, Arial, sans-serif;background:radial-gradient(1200px 600px at 80% -10%, rgba(34,211,238,.2), transparent), linear-gradient(180deg,#0b1220,#0b1220 40%, #0d1324);color:var(--txt);}
+    a{color:inherit;text-decoration:none}
+    img{max-width:100%;display:block}
+    .container{max-width:1200px;margin:0 auto;padding:1rem}
+    header{position:sticky;top:0;backdrop-filter:saturate(140%) blur(8px);background:rgba(11,18,32,.7);border-bottom:1px solid rgba(148,163,184,.12);z-index:50}
+    .nav{display:flex;align-items:center;gap:1rem}
+    .nav .logo{display:flex;align-items:center;gap:.6rem;font-weight:800}
+    .nav .logo img{width:38px;height:38px;border-radius:10px}
+    .nav a{padding:.6rem .9rem;border-radius:999px;font-weight:600;color:#dbeafe}
+    .nav a:hover{background:rgba(14,165,233,.15)}
+    .search{margin-inline-start:auto;display:flex;align-items:center;gap:.5rem}
+    .search input{width:260px;max-width:48vw;background:#0b1328;border:1px solid rgba(148,163,184,.25);padding:.7rem 1rem;border-radius:999px;color:var(--txt)}
+    .search button{background:linear-gradient(135deg,var(--brand),var(--brand-2));border:none;color:white;padding:.75rem 1rem;border-radius:999px;font-weight:700;cursor:pointer}
+
+    .hero{position:relative;overflow:hidden}
+    .hero .box{display:grid;grid-template-columns:1.2fr .8fr;gap:2rem;align-items:center}
+    .badge{display:inline-flex;align-items:center;gap:.5rem;background:rgba(34,211,238,.12);border:1px solid rgba(34,211,238,.5);color:#a5f3fc;padding:.35rem .7rem;border-radius:999px;font-size:.85rem}
+    .title{font-size:clamp(1.8rem,2.6vw,2.6rem);line-height:1.4;margin:.7rem 0}
+    .subtitle{color:var(--muted)}
+    .cta{display:flex;gap:.8rem;margin-top:1rem}
+    .cta a{background:linear-gradient(135deg,var(--brand),var(--brand-2));padding:.9rem 1.1rem;border-radius:999px;color:#fff;font-weight:800}
+    .cta a.outline{background:transparent;border:1px dashed rgba(34,211,238,.6);color:#a5f3fc}
+
+    .ribbon{display:flex;gap:1rem;flex-wrap:wrap;margin-top:1.2rem}
+    .tag{background:#0c1a33;border:1px solid rgba(148,163,184,.2);padding:.5rem .7rem;border-radius:999px;color:#cbd5e1;font-size:.9rem}
+
+    .section{padding:2.4rem 0}
+    .sec-head{display:flex;justify-content:space-between;align-items:end;margin-bottom:1rem}
+    .sec-head h2{margin:0;font-size:1.4rem}
+    .sec-head a{color:#a5f3fc}
+
+    .grid{display:grid;grid-template-columns:repeat(4,1fr);gap:1rem}
+    @media (max-width:980px){.hero .box{grid-template-columns:1fr}.grid{grid-template-columns:repeat(2,1fr)}.search input{width:42vw}}
+
+    .card{background:linear-gradient(180deg,#0f172a, #0b1328);border:1px solid rgba(148,163,184,.15);border-radius:var(--radius);overflow:hidden;box-shadow:0 10px 30px rgba(2,6,23,.35)}
+    .card .img{aspect-ratio:1.2/1;background:#0b1328;display:flex;align-items:center;justify-content:center;border-bottom:1px solid rgba(148,163,184,.12)}
+    .card .img img{width:100%;height:100%;object-fit:cover}
+    .card .body{padding:1rem}
+    .price{display:flex;justify-content:space-between;align-items:center;margin-top:.6rem}
+    .price .now{font-weight:900;color:#86efac}
+    .price .prev{color:#94a3b8;text-decoration:line-through}
+    .btn{display:inline-flex;align-items:center;gap:.4rem;padding:.6rem .9rem;border-radius:999px;border:1px solid rgba(148,163,184,.25);color:#e2e8f0}
+    .btn:hover{border-color:#60a5fa;color:#dbeafe}
+
+    .trust{display:grid;grid-template-columns:repeat(3,1fr);gap:1rem}
+    .trust .t{background:#0c1a33;border:1px solid rgba(148,163,184,.18);border-radius:var(--radius);padding:1rem}
+
+    footer{border-top:1px solid rgba(148,163,184,.12);margin-top:2rem;background:#0c1326}
+    .cols{display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:1rem}
+    .cols h4{margin:.2rem 0 1rem 0}
+    .cols ul{list-style:none;margin:0;padding:0;display:grid;gap:.5rem}
+    .cols a{color:#cbd5e1}
+    .copyright{border-top:1px solid rgba(148,163,184,.12);padding:1rem;color:#94a3b8;text-align:center}
+
+    /* Tiny micro-interaction */
+    .float-index{position:fixed;inset-inline-end:1rem;bottom:1rem;background:linear-gradient(135deg,var(--ok),#34d399);color:#052e1b;padding:.6rem .8rem;border-radius:999px;font-weight:900;box-shadow:0 10px 40px rgba(16,185,129,.35)}
+  </style></head>
 <body>
-    <header>
-        <h1>تکدو</h1>
-        <p>فروشگاه اینترنتی محصولات با کیفیت</p>
-        <nav>
-            <a href="#home">خانه</a>
-            <a href="#products">محصولات</a>
-            <a href="#about">درباره ما</a>
-            <a href="https://takdoo.com" target="_blank">سایت اصلی</a>
-        </nav>
-    </header>
-
-    <main>
-        <section id="home">
-            <h2>خوش آمدید</h2>
-            <p>به فروشگاه اینترنتی <strong>تکدو</strong> خوش آمدید! محصولات متنوع و با کیفیت را با بهترین قیمت از ما خریداری کنید.</p>
-        </section>
-
-        <section id="products">
-            <h2>محصولات ما</h2>
-            <div class="product">
-                <img src="https://via.placeholder.com/300x200" alt="محصول 1">
-                <h3>محصول 1</h3>
-                <p>توضیحات کوتاه محصول 1.</p>
+  <header>
+    <div class="container nav">
+      <a class="logo" href="https://takdoo.com/" rel="external" aria-label="خانه تکدو">
+        <img src="https://takdoo.com/favicon.ico" alt="لوگوی تکدو" onerror="this.src='https://takdoo.com/favicon.ico'" />
+        <span>تکدو</span>
+      </a>
+      <nav class="nav">
+        <a href="https://takdoo.com/digital-goods/">کالای دیجیتال</a>
+        <a href="https://takdoo.com/home-and-kitchen/">خانه و آشپزخانه</a>
+        <a href="https://takdoo.com/sporting-goods/">ورزشی</a>
+        <a href="https://takdoo.com/cosmetics/">آرایشی و بهداشتی</a>
+        <a href="https://takdoo.com/blog/">بلاگ</a>
+      </nav>
+      <form class="search" action="https://takdoo.com/" method="get" role="search" aria-label="جستجو در تکدو">
+        <input name="s" type="search" placeholder="جستجو در تکدو…" inputmode="search" />
+        <button type="submit">جستجو</button>
+      </form>
+    </div>
+  </header>  <main>
+    <!-- HERO -->
+    <section class="hero section">
+      <div class="container box">
+        <div>
+          <span class="badge">خرید سریع • تضمین اصالت • پشتیبانی ۲۴/۷</span>
+          <h1 class="title">به <strong>تکدو</strong> خوش آمدید — فروشگاه اینترنتی با قیمت‌های منصفانه و ارسال سریع</h1>
+          <p class="subtitle">برای تجربه خرید متفاوت وارد وب‌سایت رسمی شوید. این صفحه، لندینگِ معرفی است و تمام لینک‌ها به <b>سایت اصلی تکدو</b> هدایت می‌شوند.</p>
+          <div class="cta">
+            <a href="https://takdoo.com/" rel="external">ورود به سایت اصلی تکدو</a>
+            <a class="outline" href="https://takdoo.com/my-account/" rel="external">حساب کاربری</a>
+          </div>
+          <div class="ribbon">
+            <span class="tag">ارسال سریع پستی</span>
+            <span class="tag">پرداخت امن</span>
+            <span class="tag">۷ روز ضمانت بازگشت</span>
+            <span class="tag">مشاوره قبل از خرید</span>
+          </div>
+        </div>
+        <div>
+          <div class="card" aria-hidden="true">
+            <div class="img">
+              <!-- تلاش می‌شود از تصاویر سایت اصلی استفاده شود؛ در صورت عدم دسترسی، به favicon برمی‌گردد -->
+              <img src="https://takdoo.com/wp-content/uploads/2025/01/hero.webp" alt="محصولات محبوب تکدو" onerror="this.src='https://takdoo.com/favicon.ico'"/>
             </div>
-            <div class="product">
-                <img src="https://via.placeholder.com/300x200" alt="محصول 2">
-                <h3>محصول 2</h3>
-                <p>توضیحات کوتاه محصول 2.</p>
+            <div class="body">
+              <b>محصولات منتخب امروز</b>
+              <p class="subtitle">با تخفیف‌های ویژه و ارسال سریع</p>
             </div>
-            <div class="product">
-                <img src="https://via.placeholder.com/300x200" alt="محصول 3">
-                <h3>محصول 3</h3>
-                <p>توضیحات کوتاه محصول 3.</p>
+          </div>
+        </div>
+      </div>
+    </section><!-- CATEGORIES -->
+<section class="section">
+  <div class="container">
+    <div class="sec-head">
+      <h2>دسته‌بندی‌های پرطرفدار</h2>
+      <a href="https://takdoo.com/">همه دسته‌ها در takdoo.com</a>
+    </div>
+    <div class="grid">
+      <a class="card" href="https://takdoo.com/digital-goods/">
+        <div class="img"><img src="https://takdoo.com/wp-content/uploads/2025/01/digital-goods.webp" alt="کالای دیجیتال" onerror="this.src='https://takdoo.com/favicon.ico'"/></div>
+        <div class="body"><b>کالای دیجیتال</b><p class="subtitle">گوشی، هدفون، لوازم جانبی</p></div>
+      </a>
+      <a class="card" href="https://takdoo.com/home-and-kitchen/">
+        <div class="img"><img src="https://takdoo.com/wp-content/uploads/2025/01/home-kitchen.webp" alt="خانه و آشپزخانه" onerror="this.src='https://takdoo.com/favicon.ico'"/></div>
+        <div class="body"><b>خانه و آشپزخانه</b><p class="subtitle">وسایل کاربردی و ضروری</p></div>
+      </a>
+      <a class="card" href="https://takdoo.com/sporting-goods/">
+        <div class="img"><img src="https://takdoo.com/wp-content/uploads/2025/01/sport.webp" alt="ورزشی" onerror="this.src='https://takdoo.com/favicon.ico'"/></div>
+        <div class="body"><b>ورزشی</b><p class="subtitle">تناسب اندام و رزمی</p></div>
+      </a>
+      <a class="card" href="https://takdoo.com/cosmetics/">
+        <div class="img"><img src="https://takdoo.com/wp-content/uploads/2025/01/cosmetics.webp" alt="آرایشی و بهداشتی" onerror="this.src='https://takdoo.com/favicon.ico'"/></div>
+        <div class="body"><b>آرایشی و بهداشتی</b><p class="subtitle">بهترین برندها با قیمت مناسب</p></div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- PRODUCTS (نمونه) -->
+<section class="section">
+  <div class="container">
+    <div class="sec-head">
+      <h2>پر فروش‌های تکدو (نمونه نمایش)</h2>
+      <a href="https://takdoo.com/">مشاهده در سایت اصلی</a>
+    </div>
+    <div class="grid">
+      <!-- نمونه کارت محصول؛ لینک‌ها مستقیم به سایت اصلی -->
+      <article class="card" itemscope itemtype="https://schema.org/Product">
+        <a href="https://takdoo.com/product/samsung-basic-model-wired-handsfree/" itemprop="url">
+          <div class="img">
+            <img src="https://takdoo.com/wp-content/uploads/2025/01/handsfree.webp" alt="هندزفری سامسونگ سیمی مدل بیسیک" onerror="this.src='https://takdoo.com/favicon.ico'" itemprop="image"/>
+          </div>
+          <div class="body">
+            <b itemprop="name">هندزفری سامسونگ سیمی مدل بیسیک</b>
+            <p class="subtitle" itemprop="description">صدای باکیفیت، کابل ضدگره</p>
+            <div class="price">
+              <span class="now"><span itemprop="priceCurrency" content="IRR">تومان</span> ۱۸۹٬۰۰۰</span>
+              <span class="prev">۲۲۰٬۰۰۰</span>
             </div>
-        </section>
+          </div>
+        </a>
+      </article>
 
-        <section id="about">
-            <h2>درباره ما</h2>
-            <p>تکدو، فروشگاهی آنلاین با تمرکز بر کیفیت و رضایت مشتری. برای مشاهده محصولات بیشتر و خرید آنلاین به <a href="https://takdoo.com" target="_blank">سایت اصلی تکدو</a> مراجعه کنید.</p>
-        </section>
-    </main>
+      <article class="card" itemscope itemtype="https://schema.org/Product">
+        <a href="https://takdoo.com/product/samsung-usb-to-microusb-charging-cable/" itemprop="url">
+          <div class="img">
+            <img src="https://takdoo.com/wp-content/uploads/2025/01/microusb-cable.webp" alt="کابل شارژ USB به MicroUSB سامسونگ" onerror="this.src='https://takdoo.com/favicon.ico'" itemprop="image"/>
+          </div>
+          <div class="body">
+            <b itemprop="name">کابل شارژ USB به MicroUSB سامسونگ</b>
+            <p class="subtitle" itemprop="description">طول ۱.۵ متر، کیفیت مناسب</p>
+            <div class="price">
+              <span class="now">تومان ۱۱۵٬۰۰۰</span>
+              <span class="prev">۱۴۵٬۰۰۰</span>
+            </div>
+          </div>
+        </a>
+      </article>
 
-    <footer>
-        &copy; 2025 تکدو | <a href="https://takdoo.com" target="_blank" style="color:#fff;">takdoo.com</a>
-    </footer>
-</body>
+      <article class="card" itemscope itemtype="https://schema.org/Product">
+        <a href="https://takdoo.com/product/bracket-spring-power-twister/" itemprop="url">
+          <div class="img">
+            <img src="https://takdoo.com/wp-content/uploads/2025/01/power-twister.webp" alt="فنر کروشه Power Twister" onerror="this.src='https://takdoo.com/favicon.ico'" itemprop="image"/>
+          </div>
+          <div class="body">
+            <b itemprop="name">فنر کروشه Power Twister</b>
+            <p class="subtitle">ابزار تمرین بالاتنه</p>
+            <div class="price">
+              <span class="now">تومان ۳۹۹٬۰۰۰</span>
+              <span class="prev">۴۵۰٬۰۰۰</span>
+            </div>
+          </div>
+        </a>
+      </article>
+
+      <article class="card" itemscope itemtype="https://schema.org/Product">
+        <a href="https://takdoo.com/lingerie/" itemprop="url">
+          <div class="img">
+            <img src="https://takdoo.com/wp-content/uploads/2025/01/lingerie.webp" alt="لباس زیر زنانه" onerror="this.src='https://takdoo.com/favicon.ico'" itemprop="image"/>
+          </div>
+          <div class="body">
+            <b itemprop="name">لباس زیر زنانه (دسته‌بندی)</b>
+            <p class="subtitle">تنوع طرح و سایزبندی</p>
+            <div class="price">
+              <span class="now">از تومان ۹۹٬۰۰۰</span>
+              <span class="prev">۱۲۹٬۰۰۰</span>
+            </div>
+          </div>
+        </a>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- TRUST & FAQ -->
+<section class="section">
+  <div class="container trust">
+    <div class="t">
+      <b>درگاه پرداخت امن</b>
+      <p class="subtitle">پرداخت آنلاین از طریق درگاه‌های معتبر بانکی</p>
+    </div>
+    <div class="t">
+      <b>ارسال سریع</b>
+      <p class="subtitle">تحویل به سراسر ایران در کمترین زمان</p>
+    </div>
+    <div class="t">
+      <b>پشتیبانی ۲۴ ساعته</b>
+      <p class="subtitle">همراه شما در تمام مراحل خرید</p>
+    </div>
+  </div>
+</section>
+
+  </main>  <footer>
+    <div class="container cols">
+      <div>
+        <a class="logo" href="https://takdoo.com/" rel="external">
+          <img src="https://takdoo.com/favicon.ico" alt="لوگوی تکدو" onerror="this.src='https://takdoo.com/favicon.ico'" />
+          <span style="margin-inline-start:.6rem;font-weight:800">تکدو</span>
+        </a>
+        <p class="subtitle" style="margin-top:1rem">تجربه خرید آنلاین سریع و مطمئن. برای مشاهده موجودی و خرید، وارد <a href="https://takdoo.com/" style="text-decoration:underline">سایت اصلی تکدو</a> شوید.</p>
+      </div>
+      <div>
+        <h4>دسته‌ها</h4>
+        <ul>
+          <li><a href="https://takdoo.com/digital-goods/">کالای دیجیتال</a></li>
+          <li><a href="https://takdoo.com/home-and-kitchen/">خانه و آشپزخانه</a></li>
+          <li><a href="https://takdoo.com/sporting-goods/">ورزشی</a></li>
+          <li><a href="https://takdoo.com/cosmetics/">آرایشی و بهداشتی</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>پشتیبانی</h4>
+        <ul>
+          <li><a href="https://takdoo.com/contact-us/">ارتباط با ما</a></li>
+          <li><a href="https://takdoo.com/terms-and-conditions/">شرایط و قوانین</a></li>
+          <li><a href="https://takdoo.com/privacy-policy/">حریم خصوصی</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>دنبال کنید</h4>
+        <ul>
+          <li><a href="https://www.instagram.com/takdoocom/" rel="me">اینستاگرام</a></li>
+          <li><a href="https://www.youtube.com/@takdoo" rel="me">یوتیوب</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="copyright">© تمامی حقوق برای <a href="https://takdoo.com/">takdoo.com</a> محفوظ است.</div>
+  </footer><a class="float-index" href="https://takdoo.com/" rel="external" aria-label="ایندکس سریع سایت اصلی">ورود به takdoo.com</a>
+
+  <!-- JSON-LD (SEO) -->  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"Organization",
+    "name":"تکدو",
+    "url":"https://takdoo.com/",
+    "logo":"https://takdoo.com/favicon.ico",
+    "sameAs":["https://www.instagram.com/takdoocom/","https://www.youtube.com/@takdoo"]
+  }
+  </script>  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"WebSite",
+    "name":"تکدو",
+    "url":"https://takdoo.com/",
+    "potentialAction":{
+      "@type":"SearchAction",
+      "target":"https://takdoo.com/?s={search_term_string}",
+      "query-input":"required name=search_term_string"
+    }
+  }
+  </script>  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"BreadcrumbList",
+    "itemListElement":[
+      {"@type":"ListItem","position":1,"name":"خانه","item":"https://takdoo.com/"},
+      {"@type":"ListItem","position":2,"name":"دسته‌بندی‌ها","item":"https://takdoo.com/shop/"}
+    ]
+  }
+  </script>  <!-- Lazy image fallback: اگر تصویر از سایت اصلی یافت نشد، به favicon برمی‌گردد -->  <script>
+    document.querySelectorAll('img').forEach(function(img){
+      img.addEventListener('error', function(){ this.src = 'https://takdoo.com/favicon.ico';});
+      img.setAttribute('loading','lazy');
+      img.setAttribute('decoding','async');
+      img.setAttribute('referrerpolicy','no-referrer-when-downgrade');
+    });
+  </script></body>
 </html>
